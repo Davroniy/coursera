@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+  	padding: 0;
+}
+
+body {
+	font-size: 20px; /*I would like my content to be a little bigger than default*/
+}
+
+.row-container {
+	margin: 5px 10px 5px 10px;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+div div {
+	margin: 0 0 10px 10px;
+	background: #A9A9A9;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+div h2 {
+	padding: 0 3px 0 3px;
+	margin: 1px 3px 0 0;
+	float: right;
+	border: 1px solid black;
+}
+
+div:nth-child(1) h2 {
+	background: #7FFF00;
+}
+
+div:nth-child(2) h2 {
+	background: #0000FF;
+}
+div:nth-child(3) h2 {
+	background: #FFF8DC;
+}
+
+p {
+	clear: right;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+div div {
+	float: left;
+	width: 45%;
+	padding: 5px;
+}
+
+#section3 {
+	width: 91%;
+	height: 170px;
+}
+
+p {
+	height: 300px;
+}
+
+}
+
+@media (min-width: 992px) {
+
+div div {
+	float: left;
+	width: 32%;
+	padding: 10px;
+}
+
+p {
+	height: 300px;
+}
+
+}
